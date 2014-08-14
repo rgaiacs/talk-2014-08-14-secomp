@@ -14,13 +14,17 @@
     margin: 0px 0px 0.66666em;
     border-bottom: 3px solid #888;
 }
-p, li, pre, code {
+p,
+li,
+pre,
+code {
     font-size: 1.25em;
 }
 p {
     margin-bottom: 1em;
 }
-ol, ul, li {
+li pre,
+li pre code {
     line-height: 0px;
 }
 img {

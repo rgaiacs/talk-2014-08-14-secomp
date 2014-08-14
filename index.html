@@ -10,10 +10,10 @@
 
 <body>
     <h1>Licença</h1>
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Oportunidades de Negócios com EPUB3(.0.1)</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/r-gaia-cs/talk-2014-08-14-secomp" property="cc:attributionName"
-    rel="cc:attributionURL">Raniere Silva</a> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons - Atribuição 4.0 Internacional</a>.
-    <br />Baseado no trabalho disponível em <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/r-gaia-cs/talk-2014-08-14-secomp" rel="dct:source">https://github.com/r-gaia-cs/talk-2014-08-14-secomp</a>.
-    <br />Podem estar disponíveis autorizações adicionais às concedidas no âmbito desta licença em <a xmlns:cc="http://creativecommons.org/ns#" href="raniere@ime.unicamp.br" rel="cc:morePermissions">raniere@ime.unicamp.br</a>.
+    <p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Oportunidades de Negócios com EPUB3(.0.1)</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/r-gaia-cs/talk-2014-08-14-secomp" property="cc:attributionName"
+        rel="cc:attributionURL">Raniere Silva</a> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative
+    Commons - Atribuição 4.0 Internacional</a>. Baseado no trabalho disponível em <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/r-gaia-cs/talk-2014-08-14-secomp" rel="dct:source">https://github.com/r-gaia-cs/talk-2014-08-14-secomp</a>.
+        Podem estar disponíveis autorizações adicionais às concedidas no âmbito desta licença em <a xmlns:cc="http://creativecommons.org/ns#" href="raniere@ime.unicamp.br" rel="cc:morePermissions">raniere@ime.unicamp.br</a>.</p>
 
     <h1>Rolagem vs Paginação</h1>
     <div class="center">
@@ -26,7 +26,7 @@
     <h1>Telas</h1>
     <div class="center">
         <a href="http://blog.caelum.com.br/flexibilidade-em-paginas-para-dispositivos-moveis-com-media-queries/">
-          <img src="img/responsive-design.jpg">
+            <img src="img/responsive-design.jpg">
         </a>
     </div>
     <div class="note">
@@ -70,8 +70,7 @@
         <img src="img/zip-logo.jpg">
     </div>
     <div class="note">
-        <p>Arquivos EPUB são um arquivo ZIP com o nome alterado. Processo
-        semelhante é utilizado pelo ODF.</p>
+        <p>Arquivos EPUB são um arquivo ZIP com o nome alterado. Processo semelhante é utilizado pelo ODF.</p>
     </div>
 
     <h1>Micro Estrutura (1)</h1>
@@ -96,13 +95,9 @@
         </li>
     </ul>
     <div class="note">
-      <p><pre>mimetype</pre> deve ser o primeiro arquivo do zip e conter a
-      expressão <pre>application/epub+zip</pre> no padrão US-ASCII.<pre>mimetype</pre> do
-      arquivo ZIP. Além disso ele não pode ser comprimido.</p>
-      <p><pre>META-INF</pre> é um diretório que armazena arquivos especiais com
-      informações sobre assinaturas digitais, criptografia, metadados, ...</p>
-      <p><pre>container.xml</pre> identifica o "Package Documents", i.e., o
-      arquivo <pre>.opf</pre>.</p>
+        <p><pre>mimetype</pre> deve ser o primeiro arquivo do zip e conter a expressão <pre>application/epub+zip</pre> no padrão US-ASCII.<pre>mimetype</pre> do arquivo ZIP. Além disso ele não pode ser comprimido.</p>
+        <p><pre>META-INF</pre> é um diretório que armazena arquivos especiais com informações sobre assinaturas digitais, criptografia, metadados, ...</p>
+        <p><pre>container.xml</pre> identifica o "Package Documents", i.e., o arquivo <pre>.opf</pre>.</p>
     </div>
 
     <h1>Micro Estrutura (2)</h1>
@@ -128,7 +123,7 @@
       </pre>
     </code>
     <div class="note">
-      <p>Possui informações bibliográficas e estruturais.</p>
+        <p>Possui informações bibliográficas e estruturais.</p>
     </div>
 
     <h1>Package Documents (2)</h1>
@@ -147,8 +142,7 @@
       </pre>
     </code>
     <div class="note">
-      <p>Lista exaustiva de todos os elementos que constituem o EPUB, incluindo
-      image a ser utilizada como capa, figuras, ...</p>
+        <p>Lista exaustiva de todos os elementos que constituem o EPUB, incluindo image a ser utilizada como capa, figuras, ...</p>
     </div>
 
     <h1>Package Documents (3)</h1>
@@ -163,7 +157,7 @@
       </pre>
     </code>
     <div class="note">
-      <p>Lista da ordem padrão de leitura do EPUB.</p>
+        <p>Lista da ordem padrão de leitura do EPUB.</p>
     </div>
 
     <h1>EPUB Navigation Documents</h1>
@@ -182,8 +176,8 @@
       </pre>
     </code>
     <div class="note">
-      <p>EPUB Navigation Documents é o substituto do documento NCX definido no
-      EPUB2.</p>
+        <p>EPUB Navigation Documents é o substituto do documento NCX definido no EPUB2.
+        </p>
     </div>
 
     <h1>Scripted Content Documents</h1>
@@ -196,12 +190,9 @@
       </pre>
     </code>
     <div class="note">
-      <p>Todos os arquivos que utilizarem script precisam ser identificados.</p>
-      <p>Presença de scripts que alteram o tamanho dos retângulos de algum
-      elemento podem causar problemas de integridade do conteúdo que o usuário
-      possui acesso. Uma solução para isso é utilizar as tags <pre>object</pre>,
-      <pre>iframe</pre> ou <pre>embed</pre> para encapsular o documento que
-      utiliza algum script.</p>
+        <p>Todos os arquivos que utilizarem script precisam ser identificados.</p>
+        <p>Presença de scripts que alteram o tamanho dos retângulos de algum elemento podem causar problemas de integridade do conteúdo que o usuário possui acesso. Uma solução para isso é utilizar as tags <pre>object</pre>,
+            <pre>iframe</pre> ou <pre>embed</pre> para encapsular o documento que utiliza algum script.</p>
     </div>
 
     <h1>Fixed-Layout Documents</h1>
@@ -217,106 +208,103 @@
     </div>
 
     <h1>Media Overlay</h1>
-    <p>Utiliza SMIL, uma recomendação da W3C para representar sincronização
-    multimídia em XML.</p>
-    <p>Atualmente só suporta áudio. Vídeo deve ser adicionado em versões
-    futuras.</p>
+    <p>Utiliza SMIL, uma recomendação da W3C para representar sincronização multimídia em XML.</p>
+    <p>Atualmente só suporta áudio. Vídeo deve ser adicionado em versões futuras.
+    </p>
     <div class="note">
-      <p>Sincronização de audio com texto.</p>
+        <p>Sincronização de audio com texto.</p>
     </div>
 
     <h1>Open Annotation</h1>
     <p>Baseado na especificação Open Annotation do W3C.</p>
     <p>Uso de JSON-LD.</p>
     <div class="note">
-      <p>Deve ser utilizado o arquivo <pre>annotations.json</pre>.</p>
+        <p>Deve ser utilizado o arquivo <pre>annotations.json</pre>.</p>
     </div>
 
     <h1>EDUPUB</h1>
     <p><q>the EDUPUB profile (...) represents the effrt to adapt the
       functionality of the EPUB3 format to the unique structural, semantic and
-      behavioral requiremetns of educational publishing.</q></p>
+      behavioral requiremetns of educational publishing.</q>
+    </p>
     <div class="note">
     </div>
 
     <h1>Hardware</h1>
     <div class="center">
-      <a href="http://www.wired.com/2009/05/e-ink-offers-broadsheet-kit-for-developers/">
-        <img src="img/hardware.jpg" />
-      </a>
+        <a href="http://www.wired.com/2009/05/e-ink-offers-broadsheet-kit-for-developers/">
+            <img src="img/hardware.jpg" />
+        </a>
     </div>
 
     <h1>Kernel</h1>
     <div class="center">
-      <a href="http://www.datalight.com/solutions/technologies/emmc/emmc-for-linux-and-android">
-        <img src="img/kernel.jpeg" />
-      </a>
+        <a href="http://www.datalight.com/solutions/technologies/emmc/emmc-for-linux-and-android">
+            <img src="img/kernel.jpeg" />
+        </a>
     </div>
 
     <h1>EReaders</h1>
     <div class="center">
-      <a href="https://commons.wikimedia.org/wiki/File:Ereaders.jpg">
-        <img src="img/ereaders.jpg" />
-      </a>
+        <a href="https://commons.wikimedia.org/wiki/File:Ereaders.jpg">
+            <img src="img/ereaders.jpg" />
+        </a>
     </div>
 
     <h1>Leitores</h1>
     <div class="center">
-      <img src="img/apps.jpg" />
+        <img src="img/apps.jpg" />
     </div>
 
     <h1>Gerenciador de Biblioteca</h1>
     <div class="center">
-      <a href="http://calibre-ebook.com/">
-        <img src="img/calibre-logo.png" />
-      </a>
+        <a href="http://calibre-ebook.com/">
+            <img src="img/calibre-logo.png" />
+        </a>
     </div>
 
     <h1>Processadores de Texto</h1>
     <div class="center">
-      <a href="https://github.com/user-none/Sigil">
-        <img src="img/sigil-logo.png" />
-      </a>
+        <a href="https://github.com/user-none/Sigil">
+            <img src="img/sigil-logo.png" />
+        </a>
     </div>
 
     <h1>Conversores</h1>
     <ul>
-      <li>calibre</li>
-      <li>pandoc</li>
-      <li>LaTeXML</li>
+        <li>calibre</li>
+        <li>pandoc</li>
+        <li>LaTeXML</li>
     </ul>
 
     <h1>Lojas online</h1>
     <div class="center">
-      <img src="img/stores.jpg" />
+        <img src="img/stores.jpg" />
     </div>
 
     <h1>Big Data</h1>
     <div class="center">
-      <img src="img/bigdata.jpg" />
+        <img src="img/bigdata.jpg" />
     </div>
 
     <h1>Referências</h1>
     <ul>
-      <li>
-        <a
-         href="http://www.idpf.org/epub/301/spec/epub-publications.html">EPUB
+        <li>
+            <a href="http://www.idpf.org/epub/301/spec/epub-publications.html">EPUB
          Publications 3.0.1</a>, which defines publication-level semantics and overarching conformance requirements for EPUB Publications.
-      </li>
-      <li>
-        <a
-         href="http://www.idpf.org/epub/301/spec/epub-contentdocs.html">EPUB
+        </li>
+        <li>
+            <a href="http://www.idpf.org/epub/301/spec/epub-contentdocs.html">EPUB
          Content Documents 3.0.1</a>, which defines profiles of XHTML, SVG and CSS for use in the context of EPUB Publications.
-      </li>
-      <li class="listitem">
-        <a href="http://www.idpf.org/epub/301/spec/epub-ocf.html">EPUB Open
+        </li>
+        <li class="listitem">
+            <a href="http://www.idpf.org/epub/301/spec/epub-ocf.html">EPUB Open
           Container Format (OCF) 3.0.1</a>, which defines a file format and processing model for encapsulating a set of related resources into a single-file (ZIP) Container.
-      </li>
-      <li>
-        <a
-           href="http://www.idpf.org/epub/301/spec/epub-mediaoverlays.html">EPUB
+        </li>
+        <li>
+            <a href="http://www.idpf.org/epub/301/spec/epub-mediaoverlays.html">EPUB
            Media Overlays 3.0.1</a>, which defines a format and a processing model for synchronization of text and audio.
-      </li>
+        </li>
     </ul>
 </body>
 
