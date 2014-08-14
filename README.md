@@ -13,8 +13,4 @@ slides. To build it you will need Make and
 
 ## Viewing the slide deck
 
-There are many EPUB readers available. Some of the options are:
-
-- [Calibre](http://calibre-ebook.com/)
-- [FBReader](http://fbreader.org/)
-- [Readium](http://readium.org/)
+I recommend use [Calibre](http://calibre-ebook.com/).
